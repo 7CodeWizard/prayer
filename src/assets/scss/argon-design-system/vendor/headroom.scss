@@ -1,0 +1,24 @@
+.headroom {
+    height: 80px;
+    padding: 0 1em !important;
+    will-change: transform;
+    @include transition($transition-base);
+}
+
+.headroom--pinned {
+    @extend .position-fixed;
+    transform: translateY(0%);
+}
+
+.headroom--unpinned {
+    @extend .position-fixed;
+    transform: translateY(-100%);
+}
+
+.headroom--not-top {
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    transform: translateY(-63%);
+    background-color: transparent !important;
+    // box-shadow: 0 1px 10px rgba(130, 130, 134, 0.1);
+}
