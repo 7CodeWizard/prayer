@@ -28,9 +28,9 @@ const ContactUs = () => {
         'template_lmic9um', // paste your TemplateID here (you'll find it under email templates).
         {
           from_name: form.name,
-          to_name: 'Samanoskey Akechi', // put your name here.
+          to_name: 'Jaron Gaston', // put your name here.
           from_email: form.email,
-          to_email: 'samanoskey4802@gmail.com', //put your email here.
+          to_email: 'jarongaston11020.senior.dev@gmail.com', //put your email here.
           message: form.message,
         },
         'oGmNLCZyFKYhExZhv' //paste your Public Key here. You'll get it in your profile section.
