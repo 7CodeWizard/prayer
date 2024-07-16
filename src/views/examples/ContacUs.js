@@ -24,16 +24,18 @@ const ContactUs = () => {
 
     emailjs
       .send(
-        'service_k3cptxm', // paste your ServiceID here (you'll get one when your service is created).
-        'template_lmic9um', // paste your TemplateID here (you'll find it under email templates).
+        'service_zc4juap', // paste your ServiceID here (you'll get one when your service is created).
+        'template_0wlw26u', // paste your TemplateID here (you'll find it under email templates).
         {
           from_name: form.name,
           to_name: 'Jaron Gaston', // put your name here.
           from_email: form.email,
           to_email: 'jarongaston11020.senior.dev@gmail.com', //put your email here.
           message: form.message,
+
         },
-        'oGmNLCZyFKYhExZhv' //paste your Public Key here. You'll get it in your profile section.
+        'W_CUepI1Vwp6912Ar' //paste your Public Key here. You'll get it in your profile section.
+
       )
       .then(
         () => {
